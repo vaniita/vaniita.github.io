@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+        body {
+          background-color: seashell
+        }
+
+        div {
+          position: relative;
+          width: 200px;
+          height: 200px;
+          left: 40%;
+        }
+
+        .rotate {
+          animation-play-state: paused;
+          animation-iteration-count: infinite;
+          animation-name: rotate;
+          animation-duration: 1s;
+        }
+
+        .rotate:hover {
+          animation-play-state: running;
+        }
+
+        @keyframes rotate {
+          0% {
+            transform: rotate(0);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        .bounce {
+          justify-content: center;
+          align-items: center;
+          animation-play-state: paused;
+          animation-iteration-count: infinite;
+          animation-name: rotate;
+          animation-duration: 1s;
+          animation-name: bounce;
+          animation-duration: 1s;
+         }
+
+         .bounce:hover {
+          animation-play-state: running;
+         }
+
+        @keyframes bounce { 
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+            40% {transform: translateY(-30px);} 
+            60% {transform: translateY(-15px);} 
+        }
+      </style>
+      <title>cat :)"</title>
+    </head>
+    <body>
+      <main>
+        <div></div>
+        <div class="rotate">
+          <img src="catpng.png" width="150px"> 
+        </div>
+        <div>
+        <div class="bounce">
+          <img src="catpng.png" width="150px">  
+        </div> 
+      </div>
+        </div>
+      </main>
+    </body>
+  </html>
